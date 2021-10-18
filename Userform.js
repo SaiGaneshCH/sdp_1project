@@ -42,7 +42,7 @@ export class Userform extends Component {
     keepStep = () => {
         const { step } = this.state;
         this.setState({
-            step: step + 5
+            step: step + 4
         });
     }
     goStep = () =>
@@ -96,15 +96,7 @@ export class Userform extends Component {
             nextStep={this.nextStep}
             goStep={this.goStep}
             values={values}/>
-            case 5:
-                return(
-                    <Login
-                    nextStep={this.nextStep}
-                    handleChange={this.handleChange}
-                    values={values}
-                    />
-                    )
-             case 6:
+             case 5:
                 return(
                     <Home/>
                          )
