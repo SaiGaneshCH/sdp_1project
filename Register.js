@@ -73,8 +73,8 @@ export class Register extends Component {
                 <TextField
                 hintText = "Enter your Password"
                 floatingLabelText="Enter strong Password"
-                onChange = { handleChange('password') } 
-                defaultValue = {values.password}
+                onChange = { handleChange('password1') } 
+                defaultValue = {values.password1}
                 />
                 <br/>
                 <TextField
