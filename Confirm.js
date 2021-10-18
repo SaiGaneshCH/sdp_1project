@@ -21,89 +21,54 @@ export class Confirm extends Component {
 
     
     render() {
-        const { values , handleChange } = this.props;
+        const { values :{firstName,lastName,email2,mobileNumber,age,city,address,password1,occupation,bio} } = this.props;
         return (
 
             <MuiThemeProvider>
             <React.Fragment>
                 <AppBar  title="Confirm" IconButton='HealthAndSafetyIcon'  />
-            
-                <TextField
-                hintText = "Enter your First Name"
-                floatingLabelText="First Name"
-                onChange = { handleChange('firstName') } 
-                defaultValue = {values.firstName}
-                />
-                <br/>
-                <TextField
-                hintText = "Enter your Last Name"
-                floatingLabelText="Last Name"
-                onChange = { handleChange('lastName') } 
-                defaultValue = {values.lastName}
-                />
-            <br/>
-            <TextField
-                hintText = "Enter your Email"
-                floatingLabelText="sample@gmail.com"
-                onChange = { handleChange('email2') } 
-                defaultValue = {values.email2}
-                />
-  <br/>
-                <TextField
-                hintText = "Enter your Mobile Number"
-                floatingLabelText="Mobile Number"
-                onChange = { handleChange('mobileNumber') } 
-                defaultValue = {values.mobileNumber}
-                />
-                <br/>
-                <TextField
-                hintText = "Enter your Age"
-                floatingLabelText="Age"
-                onChange = { handleChange('age') } 
-                defaultValue = {values.age}
-                />
-                <br/>
-                <TextField
-                hintText = "Enter your City"
-                floatingLabelText="City"
-                onChange = { handleChange('city') } 
-                defaultValue = {values.city}
-                />
-                <br/>
-                <TextField
-                hintText = "Enter your Address"
-                floatingLabelText="Address"
-                onChange = { handleChange('address') } 
-                defaultValue = {values.address}
-                />
-                <br/>
-                <TextField
-                hintText = "Enter your Password"
-                floatingLabelText="Enter strong Password"
-                onChange = { handleChange('password') } 
-                defaultValue = {values.password}
-                />
-                <br/>
-                <TextField
-                hintText = "Enter your Password again"
-                floatingLabelText="Confirm Password"
-                onChange = { handleChange('confirmpassword') } 
-                defaultValue = {values.confirmpassword}
-                />
-                <br/>
-                <TextField
-                hintText = "Enter your Occupation"
-                floatingLabelText="Occupation"
-                onChange = { handleChange('occupation') } 
-                defaultValue = {values.occupation}
-                />
-                <br/>
-                <TextField
-                hintText = "Enter your bio"
-                floatingLabelText="Your Bio"
-                onChange = { handleChange('bio') } 
-                defaultValue = {values.bio}
-                />
+            <List>
+<ListItem
+primaryText="First Name"
+secondaryText={ firstName }
+/>
+<ListItem
+primaryText="Last Name"
+secondaryText={ lastName }
+/>
+<ListItem
+primaryText="Email"
+secondaryText={ email2 }
+/>
+<ListItem
+primaryText="Mobile Number"
+secondaryText={ mobileNumber }
+/>
+<ListItem
+primaryText="Age"
+secondaryText={ age }
+/>
+<ListItem
+primaryText="Address"
+secondaryText={ address }
+/>
+<ListItem
+primaryText="City"
+secondaryText={ city }
+/>
+<ListItem
+primaryText="Password"
+secondaryText={ password1 }
+/>
+<ListItem
+primaryText="Occupation"
+secondaryText={ occupation }
+/>
+<ListItem
+primaryText="Your Bio"
+secondaryText={ bio }
+/>
+            </List>
         <br/>
         <br/>
          <Button startIcon={<CloudDoneIcon/>}
