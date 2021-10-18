@@ -38,8 +38,8 @@ export class Register extends Component {
             <TextField
                 hintText = "Enter your Email"
                 floatingLabelText="sample@gmail.com"
-                onChange = { handleChange('email') } 
-                defaultValue = {values.email}
+                onChange = { handleChange('email2') } 
+                defaultValue = {values.email2}
                 />
   <br/>
                 <TextField
@@ -80,8 +80,8 @@ export class Register extends Component {
                 <TextField
                 hintText = "Enter your Password again"
                 floatingLabelText="Confirm Password"
-                onChange = { handleChange('password') } 
-                defaultValue = {values.password}
+                onChange = { handleChange('confirmpassword') } 
+                defaultValue = {values.confirmpassword}
                 />
                 <br/>
                 <TextField
