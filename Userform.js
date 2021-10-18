@@ -20,6 +20,7 @@ export class Userform extends Component {
         bio: '',
         userName: '',
         age: '',
+        password1: '',
         password: '',
         confirmpassword: '',
         address: '',
@@ -58,8 +59,8 @@ export class Userform extends Component {
   
     render() {
         const { step } = this.state;
-        const { firstName,lastName, email1,email2,occupation,city,mobileNumber,bio,userName,age,password,address,confirmpassword } = this.state;
-    const values = { firstName,lastName, email1,email2,occupation,city,mobileNumber,bio,userName,age,password,address,confirmpassword }
+        const { firstName,lastName, email1,email2,occupation,city,mobileNumber,bio,userName,age,password,password1, address,confirmpassword } = this.state;
+    const values = { firstName,lastName, email1,email2,occupation,city,mobileNumber,bio,userName,age,password,password1, address,confirmpassword }
   
 
     switch(step){ 
