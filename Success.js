@@ -5,7 +5,7 @@ import './success.css'
 export class Success extends Component {
     continue = e => {
         e.preventDefault();
-        this.props.nextStep();
+        this.props.goStep();
     }
     render() {
         return (
