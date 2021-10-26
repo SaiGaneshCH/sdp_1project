@@ -43,14 +43,14 @@ export class Userform extends Component {
     keepStep = () => {
         const { step } = this.state;
         this.setState({
-            step: step + 4
+            step: step + 3
         });
     }
     goStep = () =>
     {
         const { step } = this.state;
         this.setState({
-            step: step-3
+            step: step-2
         });
     }
     handleChange = input => e => {
@@ -84,20 +84,20 @@ export class Userform extends Component {
                 values={values}
                 />
                 )
-                case 3: 
-                return <Confirm
-                nextStep={this.nextStep}
-                prevStep={this.prevStep}
-                handleChange={this.handleChange}
-                values={values}
-                />
+               // case 3: 
+               // return <Confirm
+                //nextStep={this.nextStep}
+                //prevStep={this.prevStep}
+                //handleChange={this.handleChange}
+                //values={values}
+                ///>
                 
-            case 4: 
+            case 3: 
             return <Success
             nextStep={this.nextStep}
             goStep={this.goStep}
             values={values}/>
-             case 5:
+             case 4:
                 return(
                     <Home/>
                          )
